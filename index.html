@@ -3,15 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Han Yu Su's Personal Website</title>
+        <title>Han Yu Su's Personal Web</title>
     </head>
     <body> <!-- Website content goes here -->
-      <div id="home"> <!-- Generic Container used to group element together -->
+      <div id="root"> <!-- Generic Container used to group element together -->
         <header id="home"> <!-- Define the top section of a page or a section, does NOT display itself -->
           <h6>Hello! I'm</h6>
           <h1>Han Yu Su</h1>
           <h6 class="text-light">Data Scientisit</h6>
         </header>
+        <nav> <!-- Navigating Links -->
+          <a href="#home">Home</a> <!-- href="#home" means scroll to the element on his page whose id is homes -->>
+          <a href="#about">About</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">Contacts</a>
+          <a href="#supports">Supports</a>  
+        </nav>
         <section id="about"> <!-- Thematic grouping of content -->
           <h1>About Me</h1> 
           <p>Welcome to my personal website! Here you can find information about me, my projects, and how to contact me.</p>
