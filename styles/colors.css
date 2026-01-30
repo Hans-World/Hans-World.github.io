@@ -1,71 +1,72 @@
 /* ========================================
-   Apple Space Gray Professional - Color Palette
+   Sapphire Vault - Luxury & Authority Palette
+   American Express meets Serious ML Research
    ======================================== */
 
 :root {
   /* ========================================
-     BACKGROUNDS - Three-tier system
+     BACKGROUNDS - Premium & Dark
      ======================================== */
-  --color-bg-primary: #1d1d1f;      /* Space Gray 900 - Main background */
-  --color-bg-secondary: #2c2c2e;    /* Space Gray 800 - Card backgrounds */
-  --color-bg-tertiary: #3a3a3c;     /* Space Gray 700 - Elevated surfaces */
+  --color-bg-primary: #0a0a0a;      /* Near-black (AmEx luxury) */
+  --color-bg-secondary: #141414;    /* Deep charcoal (card-like depth) */
+  --color-bg-tertiary: #1f1f1f;     /* Medium dark (elevation) */
 
   /* ========================================
-     PRIMARY ACTION COLOR
+     PRIMARY ACTION COLOR - Deep Sapphire
      ======================================== */
-  --color-primary: #0071e3;         /* Apple Blue - Primary actions */
-  --color-primary-light: #0077ed;   /* Lighter blue - Hover states */
-  --color-primary-dark: #006edb;    /* Darker blue - Active states */
+  --color-primary: #1e40af;         /* Deep sapphire (sophisticated, royal) */
+  --color-primary-light: #3b82f6;   /* Medium sapphire (hover state) */
+  --color-primary-dark: #1e3a8a;    /* Darker sapphire (active state) */
 
   /* ========================================
-     SECONDARY & ACCENT
+     SECONDARY & ACCENT - Platinum & Teal
      ======================================== */
-  --color-secondary: #0071e3;       /* Same as primary - Apple uses single action color */
-  --color-secondary-light: #0077ed;
-  --color-accent: #0071e3;          /* Single accent color - no competing colors */
-  --color-accent-light: #0077ed;
+  --color-secondary: #d4af37;       /* Gold/platinum (royalty accent) */
+  --color-secondary-light: #e6c547;
+  --color-accent: #0d5e61;          /* Deep teal (alternative accent) */
+  --color-accent-light: #118c89;
 
   /* ========================================
-     TEXT COLORS
+     TEXT COLORS - Premium Clarity
      ======================================== */
-  --color-text-primary: #ffffff;    /* Pure white - Main text */
-  --color-text-secondary: #a1a1a6;  /* Gray 400 - Secondary text */
-  --color-text-tertiary: #6e6e73;   /* Gray 600 - Tertiary/subtle text */
+  --color-text-primary: #f8f8f8;    /* Pristine white (high contrast) */
+  --color-text-secondary: #c0c0c0;  /* Silver (secondary text) */
+  --color-text-tertiary: #808080;   /* Muted gray (tertiary text) */
 
   /* ========================================
      BORDERS & DIVIDERS
      ======================================== */
-  --color-border: #3a3a3c;          /* Subtle borders */
-  --color-border-light: #48484a;    /* More visible borders */
+  --color-border: #1f1f1f;          /* Subtle borders */
+  --color-border-light: #2a2a2a;    /* More visible borders */
 
   /* ========================================
      SEMANTIC COLORS
      ======================================== */
-  --color-success: #30d158;         /* Apple Green */
-  --color-error: #ff3b30;           /* Apple Red */
-  --color-warning: #ff9500;         /* Apple Orange */
+  --color-success: #10b981;         /* Clean emerald */
+  --color-error: #ef4444;           /* Alert red */
+  --color-warning: #f59e0b;         /* Caution amber */
 
   /* ========================================
-     LEGACY COMPATIBILITY - For smooth transition
+     LEGACY COMPATIBILITY
      ======================================== */
-  --color-dark: #ffffff;            /* Text color (inverted naming) */
-  --color-dark-alt: #a1a1a6;        /* Secondary text */
-  --color-light: #3a3a3c;           /* Light backgrounds (inverted) */
-  --color-white: #ffffff;           /* White text */
+  --color-dark: #f8f8f8;            /* Text color (inverted naming) */
+  --color-dark-alt: #c0c0c0;        /* Secondary text */
+  --color-light: #1f1f1f;           /* Light backgrounds (inverted) */
+  --color-white: #f8f8f8;           /* White text */
 
   /* ========================================
-     SHADOWS - Apple's refined approach
+     SHADOWS - Sapphire Tinted Premium
      ======================================== */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
-  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 8px rgba(30, 64, 175, 0.12);
+  --shadow-md: 0 4px 16px rgba(30, 64, 175, 0.15);
+  --shadow-lg: 0 8px 32px rgba(30, 64, 175, 0.2);
+  --shadow-xl: 0 12px 48px rgba(30, 64, 175, 0.25);
 
   /* ========================================
-     FOCUS & INTERACTION GLOWS
+     FOCUS & INTERACTION GLOWS - Sapphire
      ======================================== */
-  --glow-primary: 0 0 0 4px rgba(0, 113, 227, 0.15);
-  --glow-secondary: 0 0 0 3px rgba(0, 113, 227, 0.1);
+  --glow-primary: 0 0 0 4px rgba(30, 64, 175, 0.25);
+  --glow-secondary: 0 0 0 3px rgba(30, 64, 175, 0.2);
 }
 
 /* ========================================
