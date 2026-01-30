@@ -3,15 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Han Yu Su's Personal Web</title>
+        <title>Han Yu Su - Data Scientist & ML Engineer</title>
         <link rel="stylesheet" href="styles/style.css">
+
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Han Yu Su - Data Scientist & ML Engineer. Master's student in Data Science at Johns Hopkins University. Specializing in Machine Learning, Statistical Analysis, and Data Engineering.">
+        <meta name="keywords" content="data scientist, machine learning engineer, data science, statistical analysis, Johns Hopkins University, machine learning, data engineering">
+        <meta name="author" content="Han Yu Su">
+
+        <!-- Open Graph Tags for Social Sharing -->
+        <meta property="og:title" content="Han Yu Su - Data Scientist & ML Engineer">
+        <meta property="og:description" content="Master's student in Data Science at Johns Hopkins University. Specializing in Machine Learning, Statistical Analysis, and Data Engineering.">
+        <meta property="og:image" content="https://hans-world.github.io/images/ricky.png">
+        <meta property="og:url" content="https://hans-world.github.io">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Han Yu Su - Data Scientist & ML Engineer">
+        <meta name="twitter:description" content="Master's student in Data Science at Johns Hopkins University">
+
+        <!-- Theme and Favicon -->
+        <meta name="theme-color" content="#3b82f6">
+        <link rel="canonical" href="https://hans-world.github.io">
     </head>
     <body> <!-- Website content goes here -->
       <div id="root"> <!-- Generic Container used to group element together -->
         <header id="home"> <!-- Define the top section of a page or a section, does NOT display itself -->
           <h6>Hello! I'm</h6>
           <h1>Han Yu Su</h1>
-          <h6 class="text-light">Data Scientisit</h6>
+          <h6 class="text-light">Data Scientist</h6>
         </header>
         <nav> <!-- Navigating Links -->
           <a href="#home">Home</a> <!-- href="#home" means scroll to the element on his page whose id is homes -->>
@@ -47,14 +68,116 @@
           </div>
         </section>
         <section id="experiences">
+          <h6>Career Journey</h6>
+          <h2>My Experiences</h2>
+          <div class="experiences-container">
+            <article class="experience-card">
+              <div class="experience-header">
+                <h4>Master's Student in Data Science</h4>
+                <span class="experience-date">2023 - Present</span>
+              </div>
+              <p class="experience-company">Johns Hopkins University</p>
+              <p class="experience-description">
+                Pursuing an advanced degree in Data Science with focus on machine learning, statistical analysis, and big data technologies. Engaging in coursework spanning data engineering, advanced ML algorithms, and practical applications in real-world datasets.
+              </p>
+            </article>
+
+            <article class="experience-card">
+              <div class="experience-header">
+                <h4>Data Analyst / ML Practitioner</h4>
+                <span class="experience-date">2022 - 2023</span>
+              </div>
+              <p class="experience-company">Professional Experience</p>
+              <p class="experience-description">
+                Developed data analysis pipelines and explored machine learning applications. Built models for predictive analytics and data-driven insights, working with Python, SQL, and visualization tools.
+              </p>
+            </article>
+          </div>
         </section>
         <section id="projects">
+          <h6>Showcase</h6>
+          <h2>Featured Projects</h2>
+          <div class="projects-container">
+            <article class="project-card">
+              <div class="project-content">
+                <h4>Deep Pore: AI-powered sweat pore detection system</h4>
+                <p class="project-description">
+                  Designed and deployed an end-to-end computer vision pipeline for thermal video analysis, developing a custom PyTorch CNN (DeepPoreNet) that achieved 86.7% accuracy, 72.3% sensitivity, and 89.1% specificity on unseen data, trained on 30K+ curated image patches.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Pytorch</span>
+                  <span class="tag">CNN</span>
+                </div>
+              </div>
+              <a href="https://github.com/Hans-World" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+            </article>
+          </div>
         </section>
         <section id="contacts">
+          <h6>Get In Touch</h6>
+          <h2>Contact Me</h2>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required aria-label="Full Name" aria-required="true">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required aria-label="Email Address" aria-required="true">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="What is this about?" required aria-label="Subject" aria-required="true">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Your message here..." rows="5" required aria-label="Message" aria-required="true"></textarea>
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
+
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <h5>Email</h5>
+                  <a href="mailto:your-email@example.com">your-email@example.com</a>
+                </div>
+                <div class="contact-item">
+                  <h5>LinkedIn</h5>
+                  <a href="https://www.linkedin.com/in/han-yu-su-4b4243346" target="_blank" rel="noopener noreferrer">han-yu-su</a>
+                </div>
+                <div class="contact-item">
+                  <h5>GitHub</h5>
+                  <a href="https://github.com/Hans-World" target="_blank" rel="noopener noreferrer">Hans-World</a>
+                </div>
+              </div>
+
+              <div class="contact-social">
+                <h5>Connect With Me</h5>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/han-yu-su-4b4243346" target="_blank" rel="noopener noreferrer" class="social-link linkedin" title="LinkedIn">
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/Hans-World" target="_blank" rel="noopener noreferrer" class="social-link github" title="GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="supports">
-          <a href="https://vincentchen0110.github.io/">Reference link for build personal website</a>
-          <a href="https://developer.mozilla.org/en-US/">Developer MDN Web Docs</a>
+          <a href="https://vincentchen0110.github.io/" target="_blank" rel="noopener noreferrer">Reference link for build personal website</a>
+          <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">Developer MDN Web Docs</a>
         </section>
       </div>
     </body>

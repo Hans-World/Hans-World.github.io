@@ -1,0 +1,170 @@
+/* ========================================
+   Apple Space Gray Professional - Color Palette
+   ======================================== */
+
+:root {
+  /* ========================================
+     BACKGROUNDS - Three-tier system
+     ======================================== */
+  --color-bg-primary: #1d1d1f;      /* Space Gray 900 - Main background */
+  --color-bg-secondary: #2c2c2e;    /* Space Gray 800 - Card backgrounds */
+  --color-bg-tertiary: #3a3a3c;     /* Space Gray 700 - Elevated surfaces */
+
+  /* ========================================
+     PRIMARY ACTION COLOR
+     ======================================== */
+  --color-primary: #0071e3;         /* Apple Blue - Primary actions */
+  --color-primary-light: #0077ed;   /* Lighter blue - Hover states */
+  --color-primary-dark: #006edb;    /* Darker blue - Active states */
+
+  /* ========================================
+     SECONDARY & ACCENT
+     ======================================== */
+  --color-secondary: #0071e3;       /* Same as primary - Apple uses single action color */
+  --color-secondary-light: #0077ed;
+  --color-accent: #0071e3;          /* Single accent color - no competing colors */
+  --color-accent-light: #0077ed;
+
+  /* ========================================
+     TEXT COLORS
+     ======================================== */
+  --color-text-primary: #ffffff;    /* Pure white - Main text */
+  --color-text-secondary: #a1a1a6;  /* Gray 400 - Secondary text */
+  --color-text-tertiary: #6e6e73;   /* Gray 600 - Tertiary/subtle text */
+
+  /* ========================================
+     BORDERS & DIVIDERS
+     ======================================== */
+  --color-border: #3a3a3c;          /* Subtle borders */
+  --color-border-light: #48484a;    /* More visible borders */
+
+  /* ========================================
+     SEMANTIC COLORS
+     ======================================== */
+  --color-success: #30d158;         /* Apple Green */
+  --color-error: #ff3b30;           /* Apple Red */
+  --color-warning: #ff9500;         /* Apple Orange */
+
+  /* ========================================
+     LEGACY COMPATIBILITY - For smooth transition
+     ======================================== */
+  --color-dark: #ffffff;            /* Text color (inverted naming) */
+  --color-dark-alt: #a1a1a6;        /* Secondary text */
+  --color-light: #3a3a3c;           /* Light backgrounds (inverted) */
+  --color-white: #ffffff;           /* White text */
+
+  /* ========================================
+     SHADOWS - Apple's refined approach
+     ======================================== */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+
+  /* ========================================
+     FOCUS & INTERACTION GLOWS
+     ======================================== */
+  --glow-primary: 0 0 0 4px rgba(0, 113, 227, 0.15);
+  --glow-secondary: 0 0 0 3px rgba(0, 113, 227, 0.1);
+}
+
+/* ========================================
+   COLOR-SPECIFIC STYLES
+   ======================================== */
+
+/* Body and base colors */
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-primary);
+}
+
+/* Paragraphs and secondary text */
+p {
+  color: var(--color-text-secondary);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+
+/* Form inputs */
+input, textarea {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+input:focus, textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+
+/* Buttons */
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+button:hover {
+  background-color: var(--color-primary-light);
+}
+
+button:focus-visible {
+  box-shadow: var(--glow-primary);
+}
+
+/* Cards and elevated elements */
+.about-card,
+.project-card {
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-border);
+}
+
+/* Section backgrounds */
+section:nth-of-type(odd) {
+  background-color: var(--color-bg-primary);
+}
+
+section:nth-of-type(even) {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Success state */
+.form-success {
+  background-color: var(--color-success);
+  color: #ffffff;
+}
+
+/* Error state */
+.form-error {
+  color: var(--color-error);
+}
+
+.form-error-global {
+  background-color: var(--color-error);
+  color: #ffffff;
+}
+
+/* Navigation active state */
+nav a.active {
+  color: var(--color-primary);
+}
+
+nav a.active::after {
+  background-color: var(--color-primary);
+}
