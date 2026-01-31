@@ -8,15 +8,15 @@
      BACKGROUNDS
      ======================================== */
   --color-bg-primary: #728EA6;      
-  --color-bg-secondary: #ADC8D9;    /* Deep charcoal (card-like depth) */
-  --color-bg-tertiary: #012E40;     /* Medium dark (elevation) */
+  --color-bg-secondary: #012E40;    
+  --color-bg-tertiary: #ADC8D9;     
 
   /* ========================================
      PRIMARY ACTION COLOR
      ======================================== */
-  --color-primary: #96698D;         /* Deep sapphire (sophisticated, royal) */
-  --color-primary-light: #966976;   /* Medium sapphire (hover state) */
-  --color-primary-dark: #896996;    /* Darker sapphire (active state) */
+  --color-primary: #D9D4AD;         
+  --color-primary-light: #D9BEAD;   
+  --color-primary-dark: #D9ADB2;    
 
   /* ========================================
      SECONDARY & ACCENT - Platinum & Teal
