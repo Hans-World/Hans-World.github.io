@@ -5,14 +5,14 @@
 
 :root {
   /* ========================================
-     BACKGROUNDS - Premium & Dark
+     BACKGROUNDS
      ======================================== */
-  --color-bg-primary: #699665;      
-  --color-bg-secondary: #65967A;    /* Deep charcoal (card-like depth) */
-  --color-bg-tertiary: #819665;     /* Medium dark (elevation) */
+  --color-bg-primary: #728EA6;      
+  --color-bg-secondary: #ADC8D9;    /* Deep charcoal (card-like depth) */
+  --color-bg-tertiary: #012E40;     /* Medium dark (elevation) */
 
   /* ========================================
-     PRIMARY ACTION COLOR - Deep Sapphire
+     PRIMARY ACTION COLOR
      ======================================== */
   --color-primary: #96698D;         /* Deep sapphire (sophisticated, royal) */
   --color-primary-light: #966976;   /* Medium sapphire (hover state) */
