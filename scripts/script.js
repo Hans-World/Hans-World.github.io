@@ -45,7 +45,8 @@ const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * 
 // ========================================
 (function initHoverEffects() {
   document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.about-card, .experience-card, .project-card');
+    // Only apply hover effects to non-expandable cards
+    const cards = document.querySelectorAll('.about-card, .project-card');
 
     cards.forEach(card => {
       card.addEventListener('mouseenter', function() {
@@ -58,6 +59,40 @@ const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * 
         this.style.boxShadow = 'var(--shadow-md)';
       });
     });
+  });
+})();
+
+// ========================================
+// EXPANDABLE EXPERIENCE CARDS
+// ========================================
+(function initExpandableCards() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const experienceCards = document.querySelectorAll('.experience-card');
+
+    experienceCards.forEach(card => {
+      // Click handler
+      card.addEventListener('click', function() {
+        toggleCard(this);
+      });
+
+      // Keyboard accessibility (Enter and Space)
+      card.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleCard(this);
+        }
+      });
+    });
+
+    function toggleCard(card) {
+      const isExpanded = card.classList.contains('expanded');
+
+      // Toggle the expanded class
+      card.classList.toggle('expanded');
+
+      // Update ARIA attribute for accessibility
+      card.setAttribute('aria-expanded', !isExpanded);
+    }
   });
 })();
 
