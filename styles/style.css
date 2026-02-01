@@ -581,9 +581,8 @@ section h2::after {
   border-radius: var(--border-radius-md);
   padding: var(--space-lg);
   transition: all var(--transition-base);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
+  cursor: pointer;
+  user-select: none;
 }
 
 .project-card:hover {
@@ -592,22 +591,85 @@ section h2::after {
   border-color: var(--color-secondary);
 }
 
-.project-content h4 {
-  color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+.project-card:focus {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
 }
 
-.project-description {
-  color: var(--color-text-secondary);
-  line-height: 1.7;
-  margin: 0;
+/* Project header - always visible */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.project-title-group {
+  flex: 1;
+}
+
+.project-title-group h4 {
+  color: var(--color-primary);
+  margin: 0 0 var(--space-sm) 0;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
-  margin-top: var(--space-sm);
+}
+
+/* Project chevron indicator */
+.project-chevron {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.project-chevron::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--color-text-secondary);
+  border-bottom: 2px solid var(--color-text-secondary);
+  transform: translate(-50%, -70%) rotate(45deg);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.project-card:hover .project-chevron::before {
+  border-color: var(--color-primary);
+}
+
+/* Collapsible project content */
+.project-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow), margin-top var(--transition-slow), opacity var(--transition-base);
+  opacity: 0;
+}
+
+.project-description {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin: 0 0 var(--space-md) 0;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Expanded state for project cards */
+.project-card.expanded .project-chevron {
+  transform: rotate(180deg);
+}
+
+.project-card.expanded .project-content {
+  max-height: 400px;
+  margin-top: var(--space-md);
+  opacity: 1;
 }
 
 .tag {

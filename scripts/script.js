@@ -63,15 +63,17 @@ const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * 
 })();
 
 // ========================================
-// EXPANDABLE EXPERIENCE CARDS
+// EXPANDABLE CARDS (Experience & Projects)
 // ========================================
 (function initExpandableCards() {
   document.addEventListener('DOMContentLoaded', () => {
-    const experienceCards = document.querySelectorAll('.experience-card');
+    const expandableCards = document.querySelectorAll('.experience-card, .project-card');
 
-    experienceCards.forEach(card => {
+    expandableCards.forEach(card => {
       // Click handler
-      card.addEventListener('click', function() {
+      card.addEventListener('click', function(e) {
+        // Don't toggle if clicking on a link inside the card
+        if (e.target.tagName === 'A') return;
         toggleCard(this);
       });
 
