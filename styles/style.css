@@ -574,142 +574,46 @@ section h2::after {
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: var(--space-2xl);
-  max-width: 1000px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.contact-form,
-.contact-info {
+.social-links-icons {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.contact-form h3,
-.contact-info h3 {
-  color: var(--color-primary);
-  margin-bottom: var(--space-sm);
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-}
-
-.form-group label {
-  font-weight: 600;
-  color: var(--color-dark);
-  font-size: var(--fs-sm);
-}
-
-.form-group input,
-.form-group textarea {
-  padding: var(--space-sm);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-md);
-  font-family: var(--font-primary);
-  font-size: var(--fs-base);
-  transition: all var(--transition-base);
-  background-color: var(--color-white);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-secondary);
-  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
-}
-
-.btn-submit {
-  padding: var(--space-sm) var(--space-lg);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: var(--color-white);
-  border: none;
-  border-radius: var(--border-radius-md);
-  font-weight: 600;
-  font-size: var(--fs-base);
-  cursor: pointer;
-  transition: all var(--transition-base);
-}
-
-.btn-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-.btn-submit:active {
-  transform: translateY(0);
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
-.contact-item {
-  padding: var(--space-md);
-  background-color: var(--color-light);
-  border-radius: var(--border-radius-md);
-}
-
-.contact-item h5 {
-  color: var(--color-primary);
-  margin-bottom: var(--space-xs);
-}
-
-.contact-item a {
-  color: var(--color-secondary);
-  font-weight: 500;
-  word-break: break-all;
-}
-
-.contact-social {
-  margin-top: var(--space-lg);
-  padding-top: var(--space-lg);
-  border-top: 1px solid var(--color-border);
-}
-
-.contact-social h5 {
-  color: var(--color-primary);
-  margin-bottom: var(--space-md);
-}
-
-.social-links {
-  display: flex;
-  gap: var(--space-md);
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2xl);
   flex-wrap: wrap;
 }
 
-.social-link {
+.social-icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: var(--color-light);
   transition: all var(--transition-base);
-  font-size: var(--fs-xs);
-  text-align: center;
+  text-decoration: none;
 }
 
-.social-link span {
-  color: var(--color-primary);
-  font-weight: 600;
+.social-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: all var(--transition-base);
 }
 
-.social-link:hover {
-  background-color: var(--color-secondary);
-  transform: translateY(-4px);
+.social-icon-link:hover .social-icon {
+  transform: scale(1.15);
+  filter: brightness(1.2);
 }
 
-.social-link:hover span {
-  color: var(--color-white);
+.social-icon-link:focus {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 4px;
+  border-radius: var(--border-radius-md);
 }
 
 /* ========================================
@@ -852,15 +756,9 @@ section h2::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Contact: Side-by-side layout */
+  /* Contact: Social links centered */
   .contact-container {
-    grid-template-columns: 1fr 1fr;
     gap: var(--space-3xl);
-  }
-
-  /* Social links: Horizontal */
-  .social-links {
-    justify-content: flex-start;
   }
 
   /* Section spacing */
@@ -922,11 +820,14 @@ section h2::after {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Contact: Side-by-side with better spacing */
+  /* Contact: Social links centered with better spacing */
   .contact-container {
-    grid-template-columns: 1.2fr 1fr;
     gap: var(--space-3xl);
-    align-items: start;
+  }
+
+  .social-icon {
+    width: 100px;
+    height: 100px;
   }
 
   /* Navigation: More spacing */
