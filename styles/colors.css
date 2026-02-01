@@ -7,8 +7,8 @@
   /* ========================================
      BACKGROUNDS
      ======================================== */
-  --color-bg-primary: #728EA6;      
-  --color-bg-secondary: #012E40;    
+  --color-bg-primary: #012E40;      
+  --color-bg-secondary: #728EA6;    
   --color-bg-tertiary: #ADC8D9;     
 
   /* ========================================
@@ -21,10 +21,10 @@
   /* ========================================
      SECONDARY & ACCENT - Platinum & Teal
      ======================================== */
-  --color-secondary: #d4af37;       /* Gold/platinum (royalty accent) */
+  --color-secondary: #d4af37;      
   --color-secondary-light: #e6c547;
-  --color-accent: #0d5e61;          /* Deep teal (alternative accent) */
-  --color-accent-light: #118c89;
+  /* --color-accent: #0d5e61;          
+  /* --color-accent-light: #118c89; */ 
 
   /* ========================================
      TEXT COLORS - Premium Clarity
