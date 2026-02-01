@@ -897,10 +897,10 @@ section h2::after {
     font-size: 4.5rem; /* 72px */
   }
 
-  /* About section: Side-by-side layout */
+  /* About section: Side-by-side layout with vertical centering */
   .about-container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: var(--space-2xl);
   }
 
