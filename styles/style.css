@@ -147,7 +147,8 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary-light);
+  /* color: var(--color-primary-light); */
+  color: var(--color-primary);
 }
 
 a:focus {
@@ -256,7 +257,8 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: var(--color-primary-light);
 }
 
 nav a:focus {
@@ -893,114 +895,6 @@ section h2::after {
   }
 }
 
-/* ========================================
-   FORM VALIDATION STATES - Phase 1
-   ======================================== */
-.form-group {
-  margin-bottom: var(--space-md);
-  position: relative;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: var(--space-sm);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-md);
-  font-family: var(--font-primary);
-  font-size: var(--fs-base);
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
-  background-color: var(--color-bg-tertiary);
-  color: var(--color-text-primary);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-secondary);
-  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
-}
-
-/* Error state */
-.form-group--error input,
-.form-group--error textarea {
-  border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
-}
-
-.form-error {
-  color: #ef4444;
-  font-size: var(--fs-sm);
-  margin-top: var(--space-xs);
-  display: none;
-  font-weight: 500;
-}
-
-.form-group--error .form-error {
-  display: block;
-}
-
-/* Success message */
-.form-success {
-  background-color: #10b981;
-  color: var(--color-white);
-  padding: var(--space-md);
-  border-radius: var(--border-radius-md);
-  margin-bottom: var(--space-md);
-  animation: slideDown 0.3s ease-out;
-  font-weight: 500;
-  text-align: center;
-  transition: opacity var(--transition-base);
-}
-
-/* Global error message */
-.form-error-global {
-  background-color: #ef4444;
-  color: var(--color-white);
-  padding: var(--space-md);
-  border-radius: var(--border-radius-md);
-  margin-bottom: var(--space-md);
-  animation: slideDown 0.3s ease-out;
-  font-weight: 500;
-  text-align: center;
-  transition: opacity var(--transition-base);
-}
-
-/* Button states */
-.btn-submit {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: var(--color-white);
-  padding: var(--space-sm) var(--space-lg);
-  border: none;
-  border-radius: var(--border-radius-md);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-base);
-  font-size: var(--fs-base);
-  width: 100%;
-}
-
-.btn-submit:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary-light));
-}
-
-.btn-submit:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-.btn-submit:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.btn-submit:focus-visible {
-  outline: 2px solid var(--color-secondary);
-  outline-offset: 4px;
-}
-
 /* Active navigation link indicator */
 nav a.active {
   color: var(--color-primary);
@@ -1009,34 +903,4 @@ nav a.active {
 
 nav a.active::after {
   opacity: 1;
-}
-
-/* Animation for success/error messages */
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Improved focus states for form fields */
-.form-group input:focus-visible,
-.form-group textarea:focus-visible {
-  outline: 2px solid var(--color-secondary);
-  outline-offset: 2px;
-  border-color: var(--color-secondary);
-}
-
-/* Improved accessibility for screen readers */
-.form-error[role="alert"] {
-  position: relative;
-}
-
-/* Ensure proper spacing */
-#contactForm .form-group:last-of-type {
-  margin-bottom: var(--space-lg);
 }

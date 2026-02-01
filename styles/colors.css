@@ -14,17 +14,15 @@
   /* ========================================
      PRIMARY ACTION COLOR
      ======================================== */
-  --color-primary: #D9D4AD;         
-  --color-primary-light: #D9BEAD;   
-  --color-primary-dark: #D9ADB2;    
+  --color-primary: #D9D4AD;
+  --color-primary-light: #D9BEAD;    
 
   /* ========================================
      SECONDARY & ACCENT - Platinum & Teal
      ======================================== */
   --color-secondary: #d4af37;      
   --color-secondary-light: #e6c547;
-  --color-accent: #0d5e61;          
-  --color-accent-light: #118c89; 
+  --color-accent: #0d5e61; 
 
   /* ========================================
      TEXT COLORS - Premium Clarity
@@ -37,20 +35,17 @@
      BORDERS & DIVIDERS
      ======================================== */
   --color-border: #1f1f1f;          /* Subtle borders */
-  --color-border-light: #2a2a2a;    /* More visible borders */
 
   /* ========================================
      SEMANTIC COLORS
      ======================================== */
   --color-success: #10b981;         /* Clean emerald */
   --color-error: #ef4444;           /* Alert red */
-  --color-warning: #f59e0b;         /* Caution amber */
 
   /* ========================================
      LEGACY COMPATIBILITY
      ======================================== */
   --color-dark: #f8f8f8;            /* Text color (inverted naming) */
-  --color-dark-alt: #c0c0c0;        /* Secondary text */
   --color-light: #1f1f1f;           /* Light backgrounds (inverted) */
   --color-white: #f8f8f8;           /* White text */
 
@@ -145,21 +140,6 @@ section:nth-of-type(even) {
   background-color: var(--color-bg-secondary);
 }
 
-/* Success state */
-.form-success {
-  background-color: var(--color-success);
-  color: #ffffff;
-}
-
-/* Error state */
-.form-error {
-  color: var(--color-error);
-}
-
-.form-error-global {
-  background-color: var(--color-error);
-  color: #ffffff;
-}
 
 /* Navigation active state */
 nav a.active {
