@@ -4,7 +4,7 @@
    ======================================== */
 
 /* Import Apple Space Gray Professional color palette */
-@import url('colors.css');
+@import url('colors.css'); /* This makes all color variables from `colors.css` available in `style.css`. */
 
 /* ========================================
    CSS CUSTOM PROPERTIES (Layout & Typography)
@@ -111,7 +111,8 @@ h6 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-text-secondary);
+  /* color: var(--color-text-secondary); */
+  color: var(--color-secondary)
 }
 
 p {
@@ -671,17 +672,6 @@ section h2::after {
   }
 }
 
-@keyframes ripple {
-  from {
-    transform: scale(0);
-    opacity: 0.8;
-  }
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -690,13 +680,6 @@ section h2::after {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes hoverElevate {
-  to {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
   }
 }
 
